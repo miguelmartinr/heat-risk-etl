@@ -12,9 +12,9 @@ def init_etl():
     data_trans = transform_data(data)
     print('Datos transformados con exito')
 
-    conn = db_connection
-    load_data(conn, transform_data)
+    conn = db_connection()
+    load_data(conn, data_trans)
     conn.close()
 
 if __name__ == '__main__':
-    init_etl()    
+    init_etl()

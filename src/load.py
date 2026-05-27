@@ -35,7 +35,7 @@ def load_data(conn, temp_madrid):
     
 
     
-    cur.commit()
+    conn.commit()
     cur.close()
     conn.close()
 
