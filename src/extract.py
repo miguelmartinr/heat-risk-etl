@@ -4,7 +4,7 @@ import json
 def extract_data():
     url = "https://api.openweathermap.org/data/2.5/weather"
     params={
-        'q': 'Moralzarzal',
+        'q': 'Madrid',
         "appid": 'cfd268431d027c3ce8a8520557211d60',
         'units': 'metric'
     }
@@ -14,7 +14,7 @@ def extract_data():
     if response.status_code == 200:
         data= response.json()
 
-        with open('moralzarzal_raw.json', mode='w', encoding='utf-8') as save_file:
+        with open('madrid_raw.json', mode='w', encoding='utf-8') as save_file:
             json.dump(data, save_file, indent=4)
 
         return data
