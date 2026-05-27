@@ -1,0 +1,25 @@
+# Entorno virtual
+venv1/
+
+# Variables de entorno
+.env
+API_KEY=cfd268431d027c3ce8a8520557211d60
+DB_HOST=localhost
+DB_USER=soporte
+DB_PASSWORD=soporte
+DB_NAME=clima_db
+
+
+# Cachés de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Carpetas de IDEs
+.vscode/
