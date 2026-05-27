@@ -1,6 +1,6 @@
 from extract import extract_data
 from transform import transform_data
-from dbconn import db_connexion
+from dbconn import db_connection
 from load import load_data
 
 def init_etl():
@@ -12,7 +12,7 @@ def init_etl():
     data_trans = transform_data(data)
     print('Datos transformados con exito')
 
-    conn = db_connexion
+    conn = db_connection
     load_data(conn, transform_data)
     conn.close()
 
