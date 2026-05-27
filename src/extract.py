@@ -14,7 +14,7 @@ def extract_data():
     if response.status_code == 200:
         data= response.json()
 
-        with open('madrid_raw.json', mode='w', encoding='utf-8') as save_file:
+        with open(r'C:\Users\MIguel\Documents\etl-git\heat-risk-etl\madrid_raw.json', mode='w', encoding='utf-8') as save_file:
             json.dump(data, save_file, indent=4)
 
         return data
