@@ -2,6 +2,7 @@
 
 def transform_data(data):
     temp_madrid = {
+        'ciudad': data['name'],
         'temperatura': data['main']['temp'],
         'humedad': data['main']['humidity'],
         'viento': data['wind']['speed'],
